@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Te amo preciosa hermosa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Importing Dancing Script font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <h1>
+      Ni en el mundo real, ni en uno virtual, podría demostrarte lo mucho que
+      siempre te voy a amar ❤️
+    </h1>
+    <canvas id="flowerCanvas" width="800" height="500"></canvas>
+    <script src="script.js"></script>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+      <source src="assets/the-flower-garden.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const music = document.getElementById("backgroundMusic");
+        music.play();
+      });
+    </script>
+  </body>
+</html>

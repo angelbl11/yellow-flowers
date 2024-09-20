@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #87ceeb; /* Sky blue background */
+  height: 100vh;
+  margin: 0;
+  font-size: 16px; /* Base font size */
+}
+
+h1 {
+  color: #000; /* Black title */
+  font-family: "Dancing Script", cursive; /* Poetic or romantic font */
+  font-size: 2.5rem; /* Adjust font size as needed */
+  text-align: center; /* Center the text */
+  line-height: 1.4; /* Improve readability */
+  max-width: 90%; /* Optional: limit width for better presentation */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding for spacing */
+}
+canvas {
+  background: linear-gradient(#87ceeb, #32cd32); /* Sky to grass gradient */
+  border: 2px solid #000; /* Black border */
+  max-width: 100%; /* Ensure canvas doesn't overflow on smaller screens */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller font size for tablets */
+    padding: 10px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile devices */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile devices */
+    padding: 5px; /* Reduce padding */
+  }
+
+  canvas {
+    width: 100%; /* Full width for mobile devices */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
